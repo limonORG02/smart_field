@@ -1,4 +1,5 @@
 # Flutter/Dart
+backend/service_account.json
 .dart_tool/
 .packages
 .pub-cache/
@@ -37,3 +38,4 @@ lib/firebase_options.dart
 
 # Linux
 *.desktop
+backend/service_account.json
