@@ -39,3 +39,4 @@ lib/firebase_options.dart
 # Linux
 *.desktop
 backend/service_account.json
+backend/service_account.json
