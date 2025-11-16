@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "243518536690",
+    "project_id": "smartfield-4f8c9",
+    "storage_bucket": "smartfield-4f8c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243518536690:android:10394f8dc945e6fb07c96b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGgdR4beWKjX_UNp5-jV_5FNQsViABA38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

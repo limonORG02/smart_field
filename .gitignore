@@ -1,0 +1,39 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+android/.gradle/
+android/.idea/
+android/local.properties
+
+# Firebase
+lib/firebase_options.dart
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.iml
+
+# Misc
+*.log
+*.lock
+*.swp
+.DS_Store
+*.class
+*.jar
+*.war
+*.apk
+*.keystore
+
+# macOS
+*.DS_Store
+
+# Linux
+*.desktop

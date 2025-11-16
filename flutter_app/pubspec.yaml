@@ -1,23 +1,31 @@
-name: smartfield
-description: SmartField monitoring app
-publish_to: 'none'
-version: 0.0.1
+name: flutter_app
+description: A new Flutter project for SmartField
+publish_to: "none"
 
+version: 1.0.0+1
 
 environment:
-sdk: '>=2.18.0 <3.0.0'
-
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
-flutter:
-sdk: flutter
-cloud_firestore: ^4.0.0
-firebase_core: ^2.0.0
-firebase_auth: ^4.0.0
-provider: ^6.0.0
-intl: ^0.17.0
-charts_flutter: ^0.12.0
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
 
+  # Firebase
+  firebase_core: ^2.22.0
+  # Если используешь другие пакеты Firebase, добавь их:
+  # firebase_auth: ^5.1.0
+  # cloud_firestore: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
 
 flutter:
-uses-material-design: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/

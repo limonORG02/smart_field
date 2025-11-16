@@ -1,32 +1,42 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'src/ui/screens/dashboard_screen.dart';
-
-
-import 'firebase_options.dart'; // сгенерируй через FlutterFire CLI
-
+import 'firebase_options.dart';
 
 void main() async {
-WidgetsFlutterBinding.ensureInitialized();
-await Firebase.initializeApp(
-options: DefaultFirebaseOptions.currentPlatform,
-);
-runApp(const SmartFieldApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const MyApp());
 }
 
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-class SmartFieldApp extends StatelessWidget {
-const SmartFieldApp({super.key});
-
-
-@override
-Widget build(BuildContext context) {
-return MaterialApp(
-title: 'SmartField',
-theme: ThemeData(
-primarySwatch: Colors.green,
-),
-home: const DashboardScreen(),
-);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SmartField',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      home: const HomeScreen(),
+    );
+  }
 }
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('SmartField Home'),
+      ),
+      body: const Center(
+        child: Text('Firebase успешно подключен!'),
+      ),
+    );
+  }
 }
